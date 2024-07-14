@@ -9,7 +9,7 @@ sys.stdin.reconfigure(encoding='utf-8')
 sys.stdout.reconfigure(encoding='utf-8')
 
 app = Flask(__name__)
-model_path = 'model/densenet201.keras'
+model_path = 'model/finally_model.keras'
 model = load_model(model_path)
 classes = ['covid19', 'edema', 'normal', 'pneumonia', 'tuberculosis']
 
